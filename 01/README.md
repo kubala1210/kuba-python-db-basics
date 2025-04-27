@@ -2,10 +2,21 @@
 
 &nbsp;
 
-# `#01` Python i Bazy danych: Podstawy
+# `#01` Tworzenie tabeli `posts` dla bloga
 
+Twoim zadaniem jest stworzenie tabeli `posts`, która będzie przechowywać informacje o wpisach blogowych.
 
-Tutaj treść
+Tabela powinna zawierać następujące kolumny:
+- `id` – automatyczny identyfikator (`SERIAL`), klucz główny,
+- `title` – tytuł posta (`TEXT`), obowiązkowy (`NOT NULL`),
+- `content` – treść posta (`TEXT`),
+- `created_at` – data i godzina utworzenia posta (`TIMESTAMP`).
+
+Następnie dodaj kilka przykładowych wpisów o różnych datach utworzenia, korzystając np. z `NOW()` oraz `NOW() - INTERVAL 'X days'`.
+
+**Podpowiedź:**  
+Sprawdź w dokumentacji PostgreSQL typ danych `TIMESTAMP` oraz funkcję `NOW()`.
+
 
 
 &nbsp;

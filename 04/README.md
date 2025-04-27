@@ -4,8 +4,26 @@
 
 # `#04` Python i Bazy danych: Podstawy
 
-Tutaj treść
+## Zadanie 4: Łączenie kategorii i artykułów
 
+W tym zadaniu będziesz pracować na dwóch tabelach o strukturze:
+
+Tabela `categories`:
+- `id` – numer ID kategorii (`SERIAL`),
+- `name` – nazwa kategorii (`TEXT`).
+
+Tabela `articles`:
+- `id` – numer ID artykułu (`SERIAL`),
+- `title` – tytuł artykułu (`TEXT`),
+- `category_id` – ID kategorii przypisanej do artykułu (`INTEGER`).
+
+Twoim zadaniem jest:
+
+- Stworzyć obie tabele zgodnie z powyższą strukturą, tworząc odpowiednie połączenie (`FOREIGN KEY`) między `articles.category_id` a `categories.id`.
+- Dodać kilka przykładowych kategorii i artykułów (nie wszystkie artykuły muszą mieć przypisaną kategorię).
+- Napisać dwa zapytania:
+  - Za pomocą `INNER JOIN` wyświetl tylko artykuły, które mają przypisaną kategorię.
+  - Za pomocą `LEFT JOIN` wyświetl wszystkie artykuły — także te, które nie mają przypisanej kategorii (dla nich nazwa kategorii powinna być `NULL`).
 
 &nbsp;
 

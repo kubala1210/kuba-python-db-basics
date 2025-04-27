@@ -2,10 +2,24 @@
 
 &nbsp;
 
-# `#03` Python i Bazy danych: Podstawy
+# `#03` Zarządzanie użytkownikami platformy edukacyjnej
 
+W tym zadaniu będziesz pracować na tabeli `students` o strukturze:
 
-Tutaj treść
+- `id` – numer ID studenta (`SERIAL`),
+- `full_name` – pełne imię i nazwisko (`TEXT`),
+- `birth_date` – data urodzenia (`DATE`),
+- `email` – adres e-mail studenta (`TEXT`).
+
+Twoim zadaniem jest:
+
+- Stworzyć tabelę `students` zgodnie z powyższą strukturą.
+- Dodać kilku studentów, w tym także takich, którzy mają mniej niż 18 lat.
+- Napisać zapytanie SQL, które wyświetli tylko pełnoletnich studentów (18 lat lub więcej).
+
+**Podpowiedź:**  
+Aby sprawdzić wiek, porównaj `birth_date` z aktualną datą (`CURRENT_DATE`) lub oblicz różnicę lat. Zajrzyj do dokumentacji PostgreSQL, jak pracować z datami.
+
 
 
 &nbsp;

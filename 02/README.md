@@ -2,9 +2,24 @@
 
 &nbsp;
 
-# `#02` Python i Bazy danych: Podstawy
+# `#02` Paginacja wpisów bloga
 
-Tutaj treść
+W tym zadaniu będziesz pracować na tabeli `posts` o strukturze:
+
+- `id` – numer ID posta (`SERIAL`),
+- `title` – tytuł posta (`TEXT`),
+- `content` – treść posta (`TEXT`),
+- `created_at` – data i godzina utworzenia wpisu (`TIMESTAMP`).
+
+Twoim zadaniem jest napisać zapytania SQL, które umożliwią paginację danych w tabeli `posts`.
+
+W szczególności:
+- Wyświetl 5 najnowszych postów, posortowanych od najnowszego do najstarszego.
+- Wyświetl kolejne 5 postów (czyli "strona 2" wyników).
+
+**Podpowiedź:**  
+Użyj `ORDER BY created_at DESC`, a następnie zastosuj `LIMIT` i `OFFSET`, aby pobrać odpowiednią część danych.
+
 
 
 &nbsp;
