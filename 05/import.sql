@@ -30,7 +30,7 @@ INSERT INTO logins (user_id, login_time) VALUES
 
 
 SELECT * FROM logins
-WHERE login_time <= CURRENT_DATE - INTERVAL '7 days'
+WHERE login_time >= CURRENT_DATE - INTERVAL '7 days'
 
 SELECT * FROM logins
 WHERE login_time BETWEEN '2025-03-01' AND '2025-03-10';

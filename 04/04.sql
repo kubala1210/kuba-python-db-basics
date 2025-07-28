@@ -6,7 +6,7 @@ CREATE TABLE categories (
 CREATE TABLE articles (
     id SERIAL PRIMARY KEY,
     title TEXT,
-    category_id INT UNIQUE REFERENCES categories(id)
+    category_id INT REFERENCES categories(id)
 );
 
 
@@ -30,6 +30,6 @@ INNER JOIN categories
 ON categories.id = articles.category_id;
 
 SELECT * FROM articles
-LEFT JOIN articles
+LEFT JOIN categories
 ON categories.id = articles.category_id;
 
